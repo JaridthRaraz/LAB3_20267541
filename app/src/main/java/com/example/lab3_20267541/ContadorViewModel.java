@@ -17,7 +17,6 @@ public class ContadorViewModel extends ViewModel {
         if (enEjecucion) return;
 
         enEjecucion = true;
-        // Uso obligatorio de hilos (Thread) para correr en background y persistir en rotación
         new Thread(() -> {
             try {
                 for (int i = 1; i <= 20; i++) {

@@ -1,6 +1,7 @@
 package com.example.lab3_20267541;
 
 import android.os.Bundle;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.lab3_20267541.databinding.ActivityDetallePeliculaBinding;
@@ -22,11 +23,14 @@ public class DetallePelicula extends AppCompatActivity {
         }
 
         binding.btnRegresar.setOnClickListener(v -> mostrarDialogoConfirmacion());
-    }
 
-    @Override
-    public void onBackPressed() {
-        mostrarDialogoConfirmacion();
+        // Manejo moderno de la acción "Atrás" (gesto o botón físico)
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                mostrarDialogoConfirmacion();
+            }
+        });
     }
 
     private void mostrarDialogoConfirmacion() {

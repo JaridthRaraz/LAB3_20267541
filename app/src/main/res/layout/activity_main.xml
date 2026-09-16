@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4CAF50"
-    tools:context=".MainActivity">
+    tools:context="com.example.lab3_20267541.MainActivity">
 
     <!-- Encabezado Superior -->
     <TextView
@@ -40,10 +40,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#B4A0A0"
             android:orientation="vertical"
             android:padding="28dp">
 
-            <!-- Botón Ir al Contador (Azul Oscuro) -->
+            <!-- Botón Ir al Contador -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnContador"
                 android:layout_width="match_parent"
@@ -57,7 +58,7 @@
                 app:backgroundTint="#1A1C63"
                 app:cornerRadius="28dp" />
 
-            <!-- Botón Comprobar Conexión (Rojo con icono) -->
+            <!-- Botón Comprobar Conexión -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
@@ -68,14 +69,13 @@
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                app:backgroundTint="#F44336"
+                app:cornerRadius="28dp"
                 app:icon="@android:drawable/ic_dialog_alert"
                 app:iconGravity="textStart"
                 app:iconPadding="8dp"
-                app:iconTint="@android:color/white"
-                app:backgroundTint="#F44336"
-                app:cornerRadius="28dp" />
+                app:iconTint="@android:color/white" />
 
-            <!-- Línea Divisora -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -83,7 +83,6 @@
                 android:layout_marginBottom="20dp"
                 android:background="#D1C8B8" />
 
-            <!-- Etiqueta Buscador -->
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
@@ -93,7 +92,6 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <!-- Campo de Texto (EditText) -->
             <EditText
                 android:id="@+id/edtPelicula"
                 android:layout_width="match_parent"
@@ -106,7 +104,7 @@
                 android:textColorHint="#888888"
                 android:textSize="16sp" />
 
-            <!-- Botón Buscar (Verde) -->
+            <!-- Botón Buscar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnBuscar"
                 android:layout_width="match_parent"

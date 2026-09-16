@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4CAF50"
-    tools:context=".DetallePelicula">
+    tools:context="com.example.lab3_20267541.DetallePelicula">
 
-    <!-- Encabezado Superior Verde -->
+    <!-- Encabezado Superior -->
     <TextView
         android:id="@+id/tvHeader"
         android:layout_width="wrap_content"
@@ -38,9 +38,8 @@
         app:layout_constraintTop_toBottomOf="@+id/tvHeader">
 
         <LinearLayout
-            android:layout_width="395dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#CAAFAF"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -88,13 +87,12 @@
                 android:paddingHorizontal="16dp"
                 android:textSize="16sp" />
 
-            <!-- Espaciador flexible -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <!-- Botón Regresar (Rojo) -->
+            <!-- Botón Regresar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnRegresar"
                 android:layout_width="match_parent"
@@ -105,7 +103,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:backgroundTint="#FF5722"
+                app:backgroundTint="#F44336"
                 app:cornerRadius="28dp" />
 
         </LinearLayout>
